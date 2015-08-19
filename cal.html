@@ -78,14 +78,8 @@
 	  </ul>
       	</div>
       </div>
-      <div class="panel panel-primary">
-      	<div class="panel-heading"><h1>Google Calendar</h1></div>
-      	<div class="panel-body">
-			<iframe src="https://www.google.com/calendar/embed?src=6hvnu218vpief8hshvpdbqsv9c%40group.calendar.google.com&ctz=America/New_York" style="border: 0; display: block; margin: 0 auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      	</div>
-      </div>
-      <div class="panel panel-primary">
-      	<div class="panel-heading"><h1>Google Calendar via fullcal</h1></div>
+      <div class="panel panel-info">
+      	<div class="panel-heading"><h1>Calendar</h1></div>
       	<div class="panel-body">
 			<div id = "calendar">
 				
@@ -104,9 +98,10 @@
     <script src="bootstrappers-courses/resources/fullcalendar-2.4.0/fullcalendar.min.js"></script>
     <script src="bootstrappers-courses/resources/fullcalendar-2.4.0/gcal.js"></script>
   <script type='text/javascript'>
-
+//add calendar
 $(document).ready(function() {
     $('#calendar').fullCalendar({
+    	height: 500,
         googleCalendarApiKey: 'AIzaSyATebMz9Js0fdgTBE2tBpdyYjIIANJwdlk',
         events: {
             googleCalendarId: '6hvnu218vpief8hshvpdbqsv9c@group.calendar.google.com'
