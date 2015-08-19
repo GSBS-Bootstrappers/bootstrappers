@@ -13,9 +13,13 @@
     <link href="bootstrappers-courses/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap showcase theme -->
     <link href="bootstrappers-courses/resources/bootstrap/css/showcase/showcase-theme.css" rel="stylesheet">
+    
+    <!-- cal -->
+    <link href="bootstrappers-courses/resources/fullcalendar-2.4.0/fullcalendar.min.css" rel="stylesheet">
   </head>
 
   <body>
+
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-collapse collapse" id="navbar-main">
@@ -80,6 +84,14 @@
 			<iframe src="https://www.google.com/calendar/embed?src=6hvnu218vpief8hshvpdbqsv9c%40group.calendar.google.com&ctz=America/New_York" style="border: 0; display: block; margin: 0 auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       	</div>
       </div>
+      <div class="panel panel-primary">
+      	<div class="panel-heading"><h1>Google Calendar via fullcal</h1></div>
+      	<div class="panel-body">
+			<div id = "calendar">
+				
+			</div>
+      	</div>
+      </div>
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -87,6 +99,21 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="bootstrappers-courses/resources/bootstrap/js/jquery.min.js"></script>
     <script src="bootstrappers-courses/resources/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="bootstrappers-courses/resources/fullcalendar-2.4.0/lib/moment.min.js"></script>
+    <script src="bootstrappers-courses/resources/fullcalendar-2.4.0/fullcalendar.min.js"></script>
+    <script src="bootstrappers-courses/resources/fullcalendar-2.4.0/gcal.js"></script>
+  <script type='text/javascript'>
 
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+        googleCalendarApiKey: 'AIzaSyATebMz9Js0fdgTBE2tBpdyYjIIANJwdlk',
+        events: {
+            googleCalendarId: '6hvnu218vpief8hshvpdbqsv9c@group.calendar.google.com'
+        }
+    });
+});
+
+</script>
   </body>
 </html>
