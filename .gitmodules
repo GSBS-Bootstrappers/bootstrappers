@@ -1,3 +1,6 @@
 [submodule "bootstrappers-courses"]
 	path = bootstrappers-courses
 	url = https://github.com/GSBS-Bootstrappers/bootstrappers-courses.git
+[submodule "guides"]
+	path = guides
+	url = https://github.com/umass-bib/guides.git
